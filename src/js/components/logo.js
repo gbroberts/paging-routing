@@ -1,9 +1,10 @@
+const logo = `
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="205.65273mm"
-   height="69.966347mm"
+   width="100%"
+   height="100%"
    viewBox="0 0 205.65273 69.966347"
    version="1.1"
    id="svg5"
@@ -56,3 +57,6 @@
        style="font-style:italic;font-size:74.6667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Italic';white-space:pre;shape-inside:url(#rect45550)" />
   </g>
 </svg>
+`;
+
+export {logo};
