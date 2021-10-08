@@ -6,7 +6,7 @@ import link from "../components/link";
 const home = function(){
     const header = document.createElement('header');
     header.classList.add('page-header');
-    const h1 = makeHeader('h1', logo, 'ui-header');
+    const h1 = makeHeader('h1', logo, 'grahams-logo');
     const tag = tagline('Where your todos are managed', 'tag-line');
     const linkElem = link('to do app', '/toDoPage', 'todoButton');
     header.append(h1);
@@ -16,4 +16,4 @@ const home = function(){
     return header
 }
 
-export default home
+export default home;

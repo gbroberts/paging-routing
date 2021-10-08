@@ -7,8 +7,8 @@ const toDoPage = function(){
     const header = document.createElement('header');
     header.classList.add('page-header');
     const h1 = makeHeader('h1', logo, 'ui-header');
-    const tag = tagline('Where your todos are managed', 'tag-line');
-    const linkElem = link('to do app', '/toDoPage', 'todoButton');
+    const tag = tagline('What have we got to do today?', 'tag-line');
+    const linkElem = link('Home', '/', 'home-link');
     header.append(h1);
     header.append(tag);
     header.append(linkElem);

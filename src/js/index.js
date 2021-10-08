@@ -1,5 +1,4 @@
-import home from "./pages/home";
+import Router from "./routes/router";
 
-
-const app = document.querySelector('#app');
-app.appendChild(home());
+console.log(Router("/"));
+Router("/");
