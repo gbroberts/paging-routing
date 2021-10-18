@@ -1,12 +1,52 @@
 [
     {
         "id": "aw45f25v",
-        "category": "placeholder category",
-        "title": "Placeholder Title",
+        "category": "Home",
+        "title": "Clean House",
         "isComplete": true,
-        "startDate": "Wednesday September 3rd",
+        "startDate": "Saturday September 25th",
         "startTime": "9:00am",
-        "endDate": "Wednesday September 3rd",
+        "endDate": "Sunday September 26th",
+        "endTime": "8:00pm"
+    },
+    {
+        "id": "sdg69jw",
+        "category": "Work",
+        "title": "Complete Project A",
+        "isComplete": false,
+        "startDate": "Friday October 1st",
+        "startTime": "9:00am",
+        "endDate": "Friday October 29th",
+        "endTime": "9:00am"
+    },
+    {
+        "id": "skyt877",
+        "category": "School",
+        "title": "JavaScript Homework",
+        "isComplete": false,
+        "startDate": " Monday October 4th",
+        "startTime": "9:00am",
+        "endDate": "Friday October 22nd",
+        "endTime": "9:00am"
+    },
+    {
+        "id": "58skgy5",
+        "category": "Family",
+        "title": "Thanksgiving Lunch",
+        "isComplete": true,
+        "startDate": "Monday October 11th",
+        "startTime": "1:00pm",
+        "endDate": "Monday October 11th",
+        "endTime": "3:00pm"
+    },
+    {
+        "id": "hy6589i",
+        "category": "Friends",
+        "title": "Go for coffee with Curious George",
+        "isComplete": true,
+        "startDate": "Friday September 3rd",
+        "startTime": "9:00am",
+        "endDate": "Wednesday September 6th",
         "endTime": "9:00am"
     }
 ]
