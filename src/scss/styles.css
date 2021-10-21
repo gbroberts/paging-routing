@@ -415,6 +415,11 @@ table th {
   text-align: left;
 }
 
+header {
+  width: 50%;
+  margin: auto;
+}
+
 body {
   background-color: #fafafa;
 }
