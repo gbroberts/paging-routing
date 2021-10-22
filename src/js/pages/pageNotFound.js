@@ -8,7 +8,7 @@ const notFound = function(){
         </header>
     `
     const pageHeader = makeElement(headerTemplate)
-    const homeLink = link("Home Page", "/", "back-to-safety")
+    const homeLink = link("Back to Home Page", "/", "back-to-safety")
 
     pageHeader.append(homeLink)
 

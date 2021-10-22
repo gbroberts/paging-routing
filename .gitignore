@@ -10,3 +10,8 @@ dist
 
 # OS Files
 .DS_Store
+
+# SCSS CSS Files
+.css
+.css.map
+.min.css.map
