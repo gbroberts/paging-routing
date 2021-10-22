@@ -1,0 +1,22 @@
+main.notFoundMain {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    div.error404 {
+        p {
+            font-size: 2rem;
+            
+            span {
+                font-size: 3rem;
+            }
+        }
+    }
+    .back-to-safety {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: rgb(255,0,0);
+    }
+    .back-to-safety:hover {
+        color: green;
+    }
+}

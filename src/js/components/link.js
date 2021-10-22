@@ -8,7 +8,7 @@ const onRequestNewPage = function(e){
 }
 
 const link = function(label="ui link", path="/", className="ui-link"){
-    const template = `<a href="${path}" data-path="${path}">${label}</a>`;
+    const template = `<a href="${path}" class="${className}" data-path="${path}">${label}</a>`;
     const element = makeElement(template);
     element.addEventListener('click', onRequestNewPage);
     
