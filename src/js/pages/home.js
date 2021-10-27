@@ -8,7 +8,7 @@ const home = function(){
     header.classList.add('page-header');
     const h1 = makeHeader('h1', logo, 'grahams-logo');
     const tag = tagline('Where your todos are managed', 'tag-line');
-    const linkElem = link('to do app', '/toDoPage', 'todoButton');
+    const linkElem = link('to do app', '/todos', 'todoButton');
 
     header.append(h1);
     header.append(tag);

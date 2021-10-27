@@ -4,7 +4,7 @@ import notFound from "../pages/pageNotFound";
 
 const routes = {
     "/": home,
-    "/toDoPage": toDoPage
+    "/todos": toDoPage
 };
 
 

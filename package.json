@@ -10,6 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run static && npx parcel src/index.html",
     "static": "npx gulp",
+    "dev": "",
     "build": "npm run static && npx parcel build src/index.html",
     "clean:dev": "rm -rf .parcel-cache dist",
     "clean:git": "rm -rf .parcel-cache dist  node_modules"

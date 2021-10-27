@@ -14,7 +14,7 @@ const notFound = function(){
     const header = document.createElement('header');
     header.classList.add('page-header');
     const h1 = makeHeader('h1', logo, 'ui-header');
-    const tag = tagline('What have we got to do today?', 'tag-line');
+    const tag = tagline('Seems we have our own todos...', 'tag-line');
     header.append(h1);
     header.append(tag);
 
