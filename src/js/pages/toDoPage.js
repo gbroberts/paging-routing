@@ -1,10 +1,10 @@
 import {logo} from "../components/logo";
 import makeHeader from "../components/header";
 import tagline from "../components/tagline";
-import link from "../components/link";
 import { getStore } from "../redux/store";
 import todoContainer from "../components/todos/todoContainer";
-import todo from "../components/todos/todo"
+import todo from "../components/todos/todo";
+import addNewTodo from "../components/todos/addNewTodo";
 
 const toDoPage = function(){
     const todoList = getStore();
@@ -14,12 +14,10 @@ const toDoPage = function(){
     header.classList.add('page-header');
     const h1 = makeHeader('h1', logo, 'ui-header');
     const tag = tagline('What have we got to do today?', 'tag-line');
-    const linkElem = link('Home', '/', 'home-link');
+
     header.append(h1);
     header.append(tag);
-    header.append(linkElem);
     page.append(header);
-    console.log(page);
 
     function render(){
         if(todoList !== null){
@@ -34,11 +32,10 @@ const toDoPage = function(){
         }
     }
 
-
-
     render()
 
-
+    const addTodoIcon = addNewTodo();
+    page.append(addTodoIcon);
 
     return page;
 }
