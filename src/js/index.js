@@ -8,7 +8,6 @@ const onAppInit = async function(e){
 
     createStore(employees)
     Router(window.location.pathname)
-   
 }
 
 window.addEventListener('load', onAppInit)
