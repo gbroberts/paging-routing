@@ -1,5 +1,6 @@
 {
   "name": "paging-routing",
+  "github": "",
   "version": "1.0.0",
   "description": "An app to manage your todos",
   "directories": {
@@ -24,8 +25,5 @@
     "http-server": "^13.0.2",
     "parcel": "^2.0.0-rc.0",
     "sass": "^1.40.1"
-  },
-  "dependencies": {
-    "lodash": "^4.17.21"
   }
 }
