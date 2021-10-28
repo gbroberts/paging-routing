@@ -9,8 +9,8 @@ const todo = function ({id,category,title,isCompleted,startDate,startTime,endDat
      <p>Due: ${endDate}</p>
      <p class="complete"></p>
      <p class="controls" data-key="${id}">
-      <button id="editTodo">${editIcon}</button>
-      <button id="deleteTodo">${deleteIcon}</button>
+      <button id="editTodo"><img src="./data/assets/editIcon.svg" alt="Edit"></button>
+      <button id="deleteTodo"><img src="./data/assets/deleteIcon.svg" alt="Delete"></button>
      </p>      
   </li>        
   `;
