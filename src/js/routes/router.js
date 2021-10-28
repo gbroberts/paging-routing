@@ -1,5 +1,5 @@
 import home from "../pages/home";
-import toDoPage from "../pages/todoPage";
+import toDoPage from "../pages/toDoPage";
 import notFound from "../pages/pageNotFound";
 
 const routes = {
