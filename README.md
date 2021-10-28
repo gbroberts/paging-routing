@@ -1,3 +1,8 @@
-# DMIT 2008 - OA01
-## Practicial Assessment 1 - Components, Pages & Routing
-### Graham Roberts
+# Graham's Todos App
+## Author: Graham Roberts
+
+### Description
+
+This application will allow a user to add, edit and delete their todos. 
+
+At the moment this is only a visual deployment with no functionality coded in.
