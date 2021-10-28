@@ -23,7 +23,8 @@ const notFound = function(){
     let mainTemplate = `
         <main class="notFoundMain">
             <div class="error404">
-                <p><span>404 error |</span> Page not found</p>
+                <p><span>404 error</span></p>
+                <p>Page not found</p>
             </div>
         </main>
     `

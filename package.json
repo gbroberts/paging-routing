@@ -1,7 +1,7 @@
 {
-  "name": "workflow",
+  "name": "paging-routing",
   "version": "1.0.0",
-  "description": "Fewder is a simple Front End Framework for developing Web App's using modules",
+  "description": "An app to manage your todos",
   "directories": {
     "doc": "docs"
   },
@@ -15,7 +15,7 @@
     "clean:dev": "rm -rf .parcel-cache dist",
     "clean:git": "rm -rf .parcel-cache dist  node_modules"
   },
-  "author": "",
+  "author": "Graham Roberts",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-image": "^2.0.0-rc.0",

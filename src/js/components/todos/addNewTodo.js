@@ -2,7 +2,7 @@ import makeElement from "../../utils/makeElement";
 
 const addNewTodo = function(){
     const template = `
-    <div>
+    <div class="create-todo">
         <button>
             <img src="/data/assets/addIcon.svg" alt="Add new todo">
         </button>

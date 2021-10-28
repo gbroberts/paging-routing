@@ -3,7 +3,7 @@ main.notFoundMain {
     font-family: Arial, Helvetica, sans-serif;
     div.error404 {
         p {
-            font-size: 1.5rem;
+            font-size: 1rem;
             
             span {
                 font-size: 2.25rem;
@@ -14,10 +14,10 @@ main.notFoundMain {
         font-size: 1.5rem;
         font-weight: bold;
         text-decoration: none;
-        color: rgb(255,0,0);
+        color: #0a6320;
     }
     .back-to-safety:hover,
     .back-to-safety:active {
-        color: green;
+        color: #deabab;
     }
 }

@@ -1,12 +1,73 @@
 ul.todos {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0 1rem 0rem;
+    height: 500px;
+    overflow-y: auto;
+    .home {
+        background-color: #deaeab;
+    }
+    .work {
+        background-color: #abdead;
+    }
+    .school {
+        background-color: #abb4de;
+    }
+    .family {
+        background-color: #ccabde;
+    }
+    .friends {
+        background-color: #ded7ab;
+    }
     li {
-        button {
-            border: none;
-            background-color: #fff;
-            outline: none;
-            img {
-                width: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        padding: 1rem 0.25rem 1rem 1rem;
+        border-radius: 1rem;
+        min-height: 8rem;
+        div {
+            max-width: 65%;
+            h2 {
+                font-weight: bold;
             }
+            p {
+                font-size: 0.75rem;
+            }
+            p.complete {
+                color: red;
+            }
+        }
+        p.controls {
+            display: flex;
+            justify-content: space-between;
+            button {
+                border: none;
+                background: transparent;
+                outline: none;
+                img {
+                    width: 2rem;
+                }
+            }
+        }
+        
+    }
+    li:last-of-type {
+        padding: 1rem 0.25rem 0rem 1rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+div.create-todo {
+    text-align: right;
+    padding: 1rem 2rem 1.5rem 0;
+    button {
+        border: none;
+        background: transparent;
+        outline: none;
+        img {
+            width: 3rem;
         }
     }
 }
+
