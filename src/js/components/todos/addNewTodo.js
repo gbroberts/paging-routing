@@ -4,7 +4,7 @@ const addNewTodo = function(){
     const template = `
     <div class="create-todo">
         <button>
-            <img src="/data/assets/addIcon.svg" alt="Add new todo">
+            <img src="/data/assets/add-icon.svg" alt="Add new todo">
         </button>
     </div>
     `;
