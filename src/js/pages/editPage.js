@@ -76,16 +76,12 @@ const editPage = function(props){
         pageForm.append(editTodoButton);
         page.append(pageForm);
     }else{
-        const errorParagraph = document.createElement('p');
-        errorParagraph.classList.add("error");
-        errorParagraph.innerText = "No Todo information detected. Press the button below to return.";
+        errorContainer.innerText = "No Todo information detected. Press the button below to return.";
         const goBackButton = Button('Take Me Back', 'return');
         goBackButton.addEventListener('click', cancelEdit)
-        page.append(errorParagraph);
         page.append(goBackButton);
     }
     
-
     return page;
 }
 
