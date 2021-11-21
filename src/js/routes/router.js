@@ -9,26 +9,33 @@ const routes = {
 };
 
 
-const Router = (pathName) =>{
-    // Check if pathName in routes as property and store result
-    const isValidRoute = routes.hasOwnProperty(pathName);
+// params that is page data......
+const Router =  function (pathname, params=null)   {
 
-    // loading and unloading pages into the div app
-    const app = document.querySelector('#app');
-    // clearing out whatever is within the div#app
-    app.innerHTML = '';
-
-    window.history.pushState(
-    {},
-    pathName,
-    window.location.origin + pathName
-    )
+    const isValidRoute =   Object.keys(routes).find(key => key===pathname)
+     
     
-    if(isValidRoute){
-        app.appendChild(routes[window.location.pathname]());
-    }else{
-        app.appendChild(notFound())
-    }
-}
+      
+    
+     // loading and unloading pages into the div app
+     const app = document.querySelector('#app')
+     app.innerHTML = ''
+ 
+     window.history.pushState(
+         {},
+         pathname,
+         window.location.origin + pathname
+     )
+     
+      
+         // app.appendChild(routes[window.location.pathname]())
+         if(isValidRoute === undefined || isValidRoute ===''){
+             app.appendChild(notFound())
+         }else{
+ 
+             app.appendChild(routes[isValidRoute](params) ) 
+         }
+ 
+ }
 
 export default Router
