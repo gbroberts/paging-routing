@@ -12,7 +12,9 @@ function reducer  (action){
             action.cb()
             return "remove employee";
         case "edit": 
-        return "edit employee";
+            const store = getStore();
+            const index = action.payload.index;
+            return "edit employee";
         case "add": 
         return "add new employee";
         default: return store
