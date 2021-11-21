@@ -4,12 +4,12 @@ const form = function(singleTodo, action=null){
     let template = ``;
     if(action === 'edit'){
         template = `
-        <form method="post">
+        <form action="#" id="editForm">
             <label for="todoId">ID</label>
-            <input type="text" name="todoId" id="todoId" value="${singleTodo.id}" disabled>
+            <input type="text" name="todoId" id="todoId" value="${singleTodo.id}" disabled required="required" />
             <div>
                 <label for="category">Category</label>
-                <select name="category" id="category">
+                <select name="category" id="category" required="required" >
                     <option value="">[Select an Option]</option>
                     <option value="home" ${(singleTodo.category === "home") ? "selected" : ""}>Home</option>
                     <option value="work" ${(singleTodo.category === "work") ? "selected" : ""}>Work</option>
@@ -18,32 +18,32 @@ const form = function(singleTodo, action=null){
                     <option value="friends" ${(singleTodo.category === "friends") ? "selected" : ""}>Friends</option>
                 </select>
                 <label for="isCompleted">Completed</label>
-                <input type="checkbox" name="isCompleted" checked="${singleTodo.isCompleted}">
+                <input type="checkbox" name="isCompleted" ${(singleTodo.isCompleted) ? "checked" : ""} />
             </div>
             <label for="title">To Do</label>
-            <input type="text" name="title" id="title" value="${singleTodo.title}">
+            <input type="text" name="title" id="title" value="${singleTodo.title}" required="required" />
             <div>
                 <label for="startDate">Start Date</label>
-                <input type="text" name="startDate" id="startDate" value="${singleTodo.startDate}">
+                <input type="text" name="startDate" id="startDate" value="${singleTodo.startDate}" required="required" />
                 <label for="startTime">Start Time</label>
-                <input type="text" name="startTime" id="startTime" value="${singleTodo.startTime}">
+                <input type="text" name="startTime" id="startTime" value="${singleTodo.startTime}" required="required" />
             </div>
             <div>
                 <label for="endDate">End Date</label>
-                <input type="text" name="endDate" id="endDate" value="${singleTodo.endDate}">
+                <input type="text" name="endDate" id="endDate" value="${singleTodo.endDate}" required="required" />
                 <label for="endTime">End Time</label>
-                <input type="text" name="endTime" id="endTime" value="${singleTodo.endTime}">
+                <input type="text" name="endTime" id="endTime" value="${singleTodo.endTime}" required="required" />
             </div>
         </form>
     `;
     }else{
         template = `
-        <form method="post">
+        <form id="addForm">
             <label for="todoId">ID</label>
-            <input type="text" name="todoId" id="todoId" disabled>
+            <input type="text" name="todoId" id="todoId" disabled required="required" />
             <div>
                 <label for="category">Category</label>
-                <select name="category" id="category">
+                <select name="category" id="category" required="required" >
                     <option value="">[Select an Option]</option>
                     <option value="home">Home</option>
                     <option value="work">Work</option>
@@ -55,18 +55,18 @@ const form = function(singleTodo, action=null){
                 <input type="checkbox" name="isCompleted">
             </div>
             <label for="title">To Do</label>
-            <input type="text" name="title" id="title">
+            <input type="text" name="title" id="title" required="required" />
             <div>
                 <label for="startDate">Start Date</label>
-                <input type="text" name="startDate" id="startDate">
+                <input type="text" name="startDate" id="startDate" required="required" />
                 <label for="startTime">Start Time</label>
-                <input type="text" name="startTime" id="startTime">
+                <input type="text" name="startTime" id="startTime" required="required" />
             </div>
             <div>
                 <label for="endDate">End Date</label>
-                <input type="text" name="endDate" id="endDate">
+                <input type="text" name="endDate" id="endDate" required="required" />
                 <label for="endTime">End Time</label>
-                <input type="text" name="endTime" id="endTime">
+                <input type="text" name="endTime" id="endTime" required="required" />
             </div>
         </form>
     `;
