@@ -2,14 +2,10 @@
 import { v4 as uuidv4} from 'uuid'
 
 
-const keyGenerator = function (data){
-    const keyedData = data.map(item=>{
-        item.id = uuidv4().substr(0,8);
-         
-        return item
-    })
-
-    return keyedData
+const keyGenerator = function (){
+    const uniqueId = uuidv4().substr(0,8);
+    
+    return uniqueId;
 }
 
 export default keyGenerator

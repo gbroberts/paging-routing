@@ -19,12 +19,12 @@ function reducer (action){
             action.cb();
             break;
         case "add": 
-            console.log('add');
+            newStore = [...store, action.payload.newTodo]
+            updateStore(newStore);
+            action.cb();
             break;
         default: return store
-            break;
     }
-
 }
 
 

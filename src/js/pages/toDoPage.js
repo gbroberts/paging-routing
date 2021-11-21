@@ -32,6 +32,10 @@ const toDoPage = function(){
         Router('/edit', todo[0]);
     }
 
+    function onAddTodo(e){
+        Router('/add');
+    }
+
     function render(){
         if(todoList !== null){
             const ul = container.querySelector('ul');
@@ -50,6 +54,7 @@ const toDoPage = function(){
     render()
 
     const addTodoIcon = addNewTodo();
+    addTodoIcon.addEventListener('click', onAddTodo);
     page.append(addTodoIcon);
 
     return page;
