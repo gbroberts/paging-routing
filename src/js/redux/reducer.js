@@ -1,7 +1,7 @@
 import {getStore, updateStore} from './store'
 
-function reducer  (action){
-
+function reducer (action){
+    console.log(action);
     switch(action.type){
         case "delete":
             // grabbing the current store
@@ -9,14 +9,12 @@ function reducer  (action){
             const index = action.payload.index;
             const newStore = [...store.slice(0,index), ...store.slice(index+1)]
             updateStore(newStore);
-            action.cb()
+            action.cb();
             return "remove employee";
         case "edit": 
-            const store = getStore();
-            const index = action.payload.index;
             return "edit employee";
         case "add": 
-        return "add new employee";
+            return "add new employee";
         default: return store
     }
 

@@ -1,10 +1,12 @@
 import home from "../pages/home";
 import toDoPage from "../pages/toDoPage";
 import notFound from "../pages/pageNotFound";
+import deletePage from "../pages/deletePage";
 
 const routes = {
     "/": home,
     "/todos": toDoPage,
+    "/delete": deletePage,
     "/*":notFound
 };
 

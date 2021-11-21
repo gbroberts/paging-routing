@@ -5,6 +5,7 @@ import { getStore } from "../redux/store";
 import todoContainer from "../components/todos/todoContainer";
 import todo from "../components/todos/todo";
 import addNewTodo from "../components/todos/addNewTodo";
+import Router from "../routes/router";
 
 const toDoPage = function(){
     const todoList = getStore();
@@ -19,6 +20,12 @@ const toDoPage = function(){
     header.append(tag);
     page.append(header);
 
+    function onDeleteTodo(e) {
+        const todoId = e.currentTarget.parentElement.dataset.key;
+        const todo = getStore().filter((todo) => todo.id === todoId);
+        Router('/delete', todo[0])
+    }
+
     function render(){
         if(todoList !== null){
             const ul = container.querySelector('ul');
@@ -27,6 +34,7 @@ const toDoPage = function(){
 
             elements.forEach(element => {
                 ul.append(element);
+                element.querySelector('#deleteTodo').addEventListener('click', onDeleteTodo)
             });
             page.append(ul);
         }
