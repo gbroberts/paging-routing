@@ -4,7 +4,7 @@ const form = function(singleTodo, action=null){
     let template = ``;
     if(action === 'edit'){
         template = `
-        <form>
+        <form method="post">
             <label for="todoId">ID</label>
             <input type="text" name="todoId" id="todoId" value="${singleTodo.id}" disabled>
             <div>
@@ -38,7 +38,7 @@ const form = function(singleTodo, action=null){
     `;
     }else{
         template = `
-        <form>
+        <form method="post">
             <label for="todoId">ID</label>
             <input type="text" name="todoId" id="todoId" disabled>
             <div>

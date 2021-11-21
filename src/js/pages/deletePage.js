@@ -43,8 +43,8 @@ const deletePage = function(props){
         const ul = container.querySelector('ul');
         ul.append(todoToDelete);
         page.append(ul);
-        const cancelButton = Button('cancel','cancel');
-        const deleteTodoButton = Button('delete todo', 'delete');
+        const cancelButton = Button('Cancel','cancel');
+        const deleteTodoButton = Button('Delete Todo', 'delete');
         cancelButton.addEventListener('click', cancelDelete);
         deleteTodoButton.addEventListener('click', deleteTodo);
         page.append(cancelButton);

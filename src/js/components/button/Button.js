@@ -1,9 +1,9 @@
 import makeElement from "../../utils/makeElement";
 
-const cancelButton = function(action, id){
+const cancelButton = function(label, id){
     const template = `
     <button id="${id}">
-        ${action}
+        ${label}
     </button>
     `;
     const element = makeElement(template);
