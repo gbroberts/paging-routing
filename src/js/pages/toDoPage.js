@@ -23,7 +23,13 @@ const toDoPage = function(){
     function onDeleteTodo(e) {
         const todoId = e.currentTarget.parentElement.dataset.key;
         const todo = getStore().filter((todo) => todo.id === todoId);
-        Router('/delete', todo[0])
+        Router('/delete', todo[0]);
+    }
+
+    function onEditTodo(e){
+        const todoId = e.currentTarget.parentElement.dataset.key;
+        const todo = getStore().filter((todo) => todo.id === todoId);
+        Router('/edit', todo[0]);
     }
 
     function render(){
@@ -34,7 +40,8 @@ const toDoPage = function(){
 
             elements.forEach(element => {
                 ul.append(element);
-                element.querySelector('#deleteTodo').addEventListener('click', onDeleteTodo)
+                element.querySelector('#deleteTodo').addEventListener('click', onDeleteTodo);
+                element.querySelector('#editTodo').addEventListener('click', onEditTodo);
             });
             page.append(ul);
         }

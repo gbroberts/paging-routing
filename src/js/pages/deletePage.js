@@ -1,27 +1,24 @@
 import {logo} from "../components/logo";
 import makeHeader from "../components/header";
 import tagline from "../components/tagline";
-import link from "../components/link";
 import todoContainer from "../components/todos/todoContainer";
 import todoDisplay from "../components/todos/todoDisplay";
-import Button from "../components/delete/Button";
+import Button from "../components/button/Button";
 import Router from "../routes/router";
 import { getStore } from "../redux/store";
 import reducer from "../redux/reducer";
 
 const deletePage = function(props){
     const page = document.createElement('div');
-    page.setAttribute('id','deletePage')
+    page.classList.add('deletePage');
     const container = todoContainer();
     const header = document.createElement('header');
     header.classList.add('page-header');
     const h1 = makeHeader('h1', logo, 'grahams-logo');
     const tag = tagline('Deleting your todos since 2021', 'tag-line');
-    const linkElem = link('to do app', '/todos', 'todoButton');
 
     header.append(h1);
     header.append(tag);
-    header.append(linkElem);
     page.append(header);
 
     function cancelDelete(e){
