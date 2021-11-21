@@ -1,7 +1,6 @@
 import {logo} from "../components/logo";
 import makeHeader from "../components/header";
 import tagline from "../components/tagline";
-import link from "../components/link";
 import form from "../components/form/form";
 import Button from "../components/button/Button";
 import Router from "../routes/router";
@@ -15,14 +14,12 @@ const editPage = function(props){
     header.classList.add('page-header');
     const h1 = makeHeader('h1', logo, 'grahams-logo');
     const tag = tagline('Edit your todo below', 'tag-line');
-    const linkElem = link('to do app', '/todos', 'todoButton');
     const errorContainer = document.createElement('div');
     errorContainer.classList.add('error');
 
 
     header.append(h1);
     header.append(tag);
-    header.append(linkElem);
     header.append(errorContainer);
 
     page.append(header);
