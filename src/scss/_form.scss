@@ -1,0 +1,34 @@
+form {
+    padding: 0.5rem;
+    input, label {
+        display: block;
+    }
+    input {
+        font-size: 0.9rem;;
+    }
+    label {
+        color: #70529c;
+        font-weight: bold;
+    }
+    div.flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    div.time{
+        margin-left: 10%;
+        input {
+            max-width: 40%;
+        }
+    }
+    div.completed {
+        margin-right: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        label {
+            width: 100%;
+        }
+        
+    }
+}
