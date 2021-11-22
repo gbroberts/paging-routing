@@ -6,7 +6,7 @@
 
 #### General Information
 
-This `paging-routing` application is a visual representation of an application to allow a user to add todos coded in vanilla JavaScript modules. Presently, it contains no functionality to add/delete/edit the todos. It does contain pages created with JavaScript and a router for routing between JavaScript pages that render via functions. Styling is done through using SASS stylesheets.
+This `paging-routing` application allows a user to add todos coded in vanilla JavaScript modules. The user will be able to add/delete/edit their todos. It does contain pages created with JavaScript and a router for routing between JavaScript pages that render via functions. Styling is done through using SCSS stylesheets.
 
 #### How to Run
 
@@ -22,5 +22,3 @@ This project makes use of Gulp to pipe the static files, local json data and svg
 
 You can see the application running at the following link on netlify:
 [Link to Netlify](https://paging-routing.netlify.app/)
-
-To deploy to Netlify, you will need to create and copy the supplied [netlify.toml](netlify.toml) into the root of your created dist folder, if just uploading the dist folder manually. If you are deploying through continuous deployment with GitHub, ensure the [netlify.toml](netlify.toml) file is at the root of your project. This is to override Netlify's default 404 page to display your own custom 404 page since it will always route to `index.html` and subequently your `index.js` getting access to the router.
