@@ -6,7 +6,7 @@
 
 #### General Information
 
-This `paging-routing` application allows a user to add todos coded in vanilla JavaScript modules. The user will be able to add/delete/edit their todos. It does contain pages created with JavaScript and a router for routing between JavaScript pages that render via functions. Styling is done through using SCSS stylesheets.
+This `paging-routing` application allows a user to add todos coded in vanilla JavaScript modules. The user will be able to add/delete/edit their todos. It contains pages created with JavaScript and a router for routing between JavaScript pages that render via functions. Styling is done through using SCSS stylesheets.
 
 #### How to Run
 
