@@ -63,6 +63,9 @@ const addPage = function(props){
         }
     }
 
+    const buttonDiv = document.createElement('div');
+    buttonDiv.classList.add('buttonDiv');
+
     if(props === null){
         const pageForm = form(props, 'add');
 
@@ -80,8 +83,9 @@ const addPage = function(props){
         addTodoButton.addEventListener('click', addTodo);
         addTodoButton.setAttribute('type', 'submit');
 
-        pageForm.append(cancelButton);
-        pageForm.append(addTodoButton);
+        buttonDiv.append(cancelButton);
+        buttonDiv.append(addTodoButton);
+        pageForm.append(buttonDiv);
         page.append(pageForm);
     }
     

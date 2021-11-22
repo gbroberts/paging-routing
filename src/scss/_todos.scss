@@ -1,24 +1,33 @@
 ul.todos {
+    border-radius: 10px;
     font-family:Arial, Helvetica, sans-serif;
-    margin: 0 1rem 0rem;
+    margin: 0 0 0 5%;
+    width: 90%;
     max-height: 500px;
     overflow-y: auto;
     .home {
-        background-color: #deaeab;
+        background-color: #fff;
+        box-shadow: -10px -5px 1px #deaeab;
     }
     .work {
-        background-color: #abdead;
+        background-color: #fff;
+        box-shadow: -10px -5px 1px #abdead;
     }
     .school {
-        background-color: #abb4de;
+        background-color: #fff;
+        box-shadow: -10px -5px 1px #abb4de;
     }
     .family {
-        background-color: #ccabde;
+        background-color: #fff;
+        box-shadow: -10px -5px 1px #ccabde;
     }
     .friends {
-        background-color: #ded7ab;
+        background-color: #fff;
+        box-shadow: -10px -5px 1px #ded7ab;        
     }
     li {
+        width: 90%;
+        margin: 1rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -59,14 +68,15 @@ ul.todos {
 }
 
 div.create-todo {
+    margin: 0   0.8rem;
     text-align: right;
-    padding: 1rem 2rem 1.5rem 0;
+    padding: 1rem;
     button {
         border: none;
         background: transparent;
         outline: none;
         img {
-            width: 3rem;
+            width: 4rem;
         }
     }
 }

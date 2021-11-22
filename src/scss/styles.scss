@@ -4,10 +4,18 @@
 @use 'todos';
 
 
+
 body {
-    background-color: rgb(220, 220, 220);
+    background-color: #e6e6e6;
     #app {
-        max-width: 580px;
+        max-width: 360px;
         margin: 0 auto;
+    }
+    div.error {
+        font-weight: bold;
+        color: #bd0000;
+    }
+    div.buttonDiv {
+        text-align: center;
     }
 }

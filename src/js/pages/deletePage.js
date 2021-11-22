@@ -16,9 +16,12 @@ const deletePage = function(props){
     header.classList.add('page-header');
     const h1 = makeHeader('h1', logo, 'grahams-logo');
     const tag = tagline('Deleting your todos since 2021', 'tag-line');
+    const errorContainer = document.createElement('div');
+    errorContainer.classList.add('error');
 
     header.append(h1);
     header.append(tag);
+    header.append(errorContainer);
     page.append(header);
 
     function cancelDelete(e){
@@ -38,6 +41,9 @@ const deletePage = function(props){
         }
     }
 
+    const buttonDiv = document.createElement('div');
+    buttonDiv.classList.add('buttonDiv');
+
     if(props !== null){
         const todoToDelete = todoDisplay(props);
         const ul = container.querySelector('ul');
@@ -47,16 +53,15 @@ const deletePage = function(props){
         const deleteTodoButton = Button('Delete Todo', 'delete');
         cancelButton.addEventListener('click', cancelDelete);
         deleteTodoButton.addEventListener('click', deleteTodo);
-        page.append(cancelButton);
-        page.append(deleteTodoButton);
+        buttonDiv.append(cancelButton);
+        buttonDiv.append(deleteTodoButton);
+        page.append(buttonDiv);
     }else{
-        const errorParagraph = document.createElement('p');
-        errorParagraph.classList.add("error");
-        errorParagraph.innerText = "No Todo information detected. Press the button below to return.";
+        errorContainer.innerText = "No Todo information detected. Press the button below to return.";
         const goBackButton = Button('Take Me Back', 'return');
         goBackButton.addEventListener('click', cancelDelete)
-        page.append(errorParagraph);
-        page.append(goBackButton);
+        buttonDiv.append(goBackButton);
+        page.append(buttonDiv);
     }
 
     return page

@@ -63,6 +63,9 @@ const editPage = function(props){
         
     }
 
+    const buttonDiv = document.createElement('div');
+    buttonDiv.classList.add('buttonDiv');
+
     if(props !== null){
         const pageForm = form(props, 'edit');
 
@@ -72,14 +75,16 @@ const editPage = function(props){
         editTodoButton.addEventListener('click', editTodo);
         editTodoButton.setAttribute('type', 'submit');
 
-        pageForm.append(cancelButton);
-        pageForm.append(editTodoButton);
+        buttonDiv.append(cancelButton);
+        buttonDiv.append(editTodoButton);
+        pageForm.append(buttonDiv)
         page.append(pageForm);
     }else{
         errorContainer.innerText = "No Todo information detected. Press the button below to return.";
         const goBackButton = Button('Take Me Back', 'return');
         goBackButton.addEventListener('click', cancelEdit)
-        page.append(goBackButton);
+        buttonDiv.append(goBackButton)
+        page.append(buttonDiv);
     }
     
     return page;
