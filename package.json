@@ -23,7 +23,7 @@
     "@parcel/transformer-sass": "^2.0.0-rc.0",
     "gulp": "^4.0.2",
     "http-server": "^13.0.2",
-    "parcel": "^2.0.0-rc.0",
+    "parcel": "^2.2.1",
     "sass": "^1.40.1"
   },
   "dependencies": {
